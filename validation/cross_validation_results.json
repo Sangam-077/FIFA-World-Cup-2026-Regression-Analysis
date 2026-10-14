@@ -1,0 +1,174 @@
+{
+  "model_2_1": {
+    "predictor_count": 8,
+    "predictors": [
+      "home_elo_before",
+      "away_elo_before",
+      "home_avg_goals_for_before",
+      "home_avg_goals_against_before",
+      "away_avg_goals_for_before",
+      "away_avg_goals_against_before",
+      "is_knockout",
+      "home_is_host"
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "train_rows": 32,
+        "test_rows": 22,
+        "train_end": "2026-06-19",
+        "test_start": "2026-06-20",
+        "test_end": "2026-06-24",
+        "MAE": 1.8236514649139872,
+        "RMSE": 2.113464725095319,
+        "R2": 0.14785224997888846,
+        "baseline_MAE": 1.8181818181818181,
+        "baseline_RMSE": 2.3509548350327014
+      },
+      {
+        "fold": 2,
+        "train_rows": 54,
+        "test_rows": 22,
+        "train_end": "2026-06-24",
+        "test_start": "2026-06-25",
+        "test_end": "2026-06-29",
+        "MAE": 1.334968898008285,
+        "RMSE": 1.8784761009898172,
+        "R2": -0.04393488484297969,
+        "baseline_MAE": 1.685185185185185,
+        "baseline_RMSE": 2.184692919499851
+      },
+      {
+        "fold": 3,
+        "train_rows": 76,
+        "test_rows": 14,
+        "train_end": "2026-06-29",
+        "test_start": "2026-06-30",
+        "test_end": "2026-07-04",
+        "MAE": 1.1829162816524228,
+        "RMSE": 1.48514964299181,
+        "R2": 0.13537757086514912,
+        "baseline_MAE": 1.3289473684210529,
+        "baseline_RMSE": 1.6235477209543507
+      },
+      {
+        "fold": 4,
+        "train_rows": 90,
+        "test_rows": 8,
+        "train_end": "2026-07-04",
+        "test_start": "2026-07-05",
+        "test_end": "2026-07-10",
+        "MAE": 1.3405655683674365,
+        "RMSE": 1.6834287709234312,
+        "R2": -0.2955119665246968,
+        "baseline_MAE": 1.4027777777777777,
+        "baseline_RMSE": 1.7114357556388182
+      },
+      {
+        "fold": 5,
+        "train_rows": 98,
+        "test_rows": 6,
+        "train_end": "2026-07-10",
+        "test_start": "2026-07-11",
+        "test_end": "2026-07-19",
+        "MAE": 0.8527648994044968,
+        "RMSE": 1.0097221322429863,
+        "R2": 0.5468716514038565,
+        "baseline_MAE": 1.6802721088435373,
+        "baseline_RMSE": 1.8257323532140952
+      }
+    ],
+    "pooled_MAE": 1.415160970427644,
+    "pooled_RMSE": 1.8088017362868793,
+    "pooled_R2": 0.14425715788739057,
+    "pooled_baseline_MAE_weighted_fold_mean": 1.6247665570451704,
+    "pooled_baseline_RMSE_weighted_fold_root_mean_square": 2.064689143622857,
+    "evaluated_rows": 72
+  },
+  "model_2_2": {
+    "predictor_count": 8,
+    "predictors": [
+      "is_home",
+      "is_knockout",
+      "team_days_rest",
+      "opponent_days_rest",
+      "team_recent_points_avg",
+      "opponent_recent_points_avg",
+      "team_recent_clean_sheet_rate",
+      "opponent_recent_clean_sheet_rate"
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "train_rows": 64,
+        "test_rows": 44,
+        "train_end": "2026-06-19",
+        "test_start": "2026-06-20",
+        "test_end": "2026-06-24",
+        "MAE": 1.1196644891451408,
+        "RMSE": 1.3510656978544446,
+        "R2": 0.1717991997743088,
+        "baseline_MAE": 1.2727272727272727,
+        "baseline_RMSE": 1.4847711791873706
+      },
+      {
+        "fold": 2,
+        "train_rows": 108,
+        "test_rows": 44,
+        "train_end": "2026-06-24",
+        "test_start": "2026-06-25",
+        "test_end": "2026-06-29",
+        "MAE": 0.9759302978006478,
+        "RMSE": 1.2453062930521475,
+        "R2": 0.0857718909361802,
+        "baseline_MAE": 1.06523569023569,
+        "baseline_RMSE": 1.3049703777266297
+      },
+      {
+        "fold": 3,
+        "train_rows": 152,
+        "test_rows": 28,
+        "train_end": "2026-06-29",
+        "test_start": "2026-06-30",
+        "test_end": "2026-07-04",
+        "MAE": 0.7837470945016985,
+        "RMSE": 1.0306217939441353,
+        "R2": 0.08287431144530832,
+        "baseline_MAE": 0.9619360902255638,
+        "baseline_RMSE": 1.0817832481799385
+      },
+      {
+        "fold": 4,
+        "train_rows": 180,
+        "test_rows": 16,
+        "train_end": "2026-07-04",
+        "test_start": "2026-07-05",
+        "test_end": "2026-07-10",
+        "MAE": 0.9573508706815856,
+        "RMSE": 1.2296422186987608,
+        "R2": -0.09965089891375367,
+        "baseline_MAE": 1.0,
+        "baseline_RMSE": 1.1736694594305501
+      },
+      {
+        "fold": 5,
+        "train_rows": 196,
+        "test_rows": 12,
+        "train_end": "2026-07-10",
+        "test_start": "2026-07-11",
+        "test_end": "2026-07-19",
+        "MAE": 1.2254624213246317,
+        "RMSE": 1.7354221839508992,
+        "R2": -0.09793261403301967,
+        "baseline_MAE": 1.25,
+        "baseline_RMSE": 1.7196047421570237
+      }
+    ],
+    "pooled_MAE": 1.0012100851282169,
+    "pooled_RMSE": 1.2872909593677395,
+    "pooled_R2": 0.08883116409223157,
+    "pooled_baseline_MAE_weighted_fold_mean": 1.1166984784492096,
+    "pooled_baseline_RMSE_weighted_fold_root_mean_square": 1.3494374438408456,
+    "evaluated_rows": 144
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "model_2_1": {
+    "evaluation": "chronological holdout using final 20% of unique target dates",
+    "n": 104,
+    "unique_matches": 104,
+    "predictor_count": 8,
+    "predictors": [
+      "home_elo_before",
+      "away_elo_before",
+      "home_avg_goals_for_before",
+      "home_avg_goals_against_before",
+      "away_avg_goals_for_before",
+      "away_avg_goals_against_before",
+      "is_knockout",
+      "home_is_host"
+    ],
+    "train_n": 96,
+    "test_n": 8,
+    "train_end_date": "2026-07-07",
+    "test_start_date": "2026-07-09",
+    "test_end_date": "2026-07-19",
+    "test_MAE": 0.8410978872645307,
+    "test_RMSE": 0.9843170208831503,
+    "test_R2": 0.6124480009598879,
+    "baseline_MAE": 1.5,
+    "baseline_RMSE": 1.6647123959144148,
+    "baseline_R2": -0.10850694444444464,
+    "train_adjusted_R2_HC3_OLS": 0.34531687303588554,
+    "train_OLS_F_test_pvalue": 2.0717053040822404e-05,
+    "breusch_pagan_pvalue": 0.23119832910940155,
+    "durbin_watson": 2.0424401686581577,
+    "max_VIF": 1.5593374819478913,
+    "vif": [
+      {
+        "feature": "home_elo_before",
+        "VIF": 1.4190392041561464
+      },
+      {
+        "feature": "away_elo_before",
+        "VIF": 1.3489922107479428
+      },
+      {
+        "feature": "home_avg_goals_for_before",
+        "VIF": 1.5593374819478913
+      },
+      {
+        "feature": "home_avg_goals_against_before",
+        "VIF": 1.2061330731032203
+      },
+      {
+        "feature": "away_avg_goals_for_before",
+        "VIF": 1.2791613336284946
+      },
+      {
+        "feature": "away_avg_goals_against_before",
+        "VIF": 1.0720158774001367
+      },
+      {
+        "feature": "is_knockout",
+        "VIF": 1.2212819631011438
+      },
+      {
+        "feature": "home_is_host",
+        "VIF": 1.0935600641219108
+      }
+    ],
+    "coefficients": {
+      "intercept": -0.17259481436111423,
+      "home_elo_before": 0.004468415670618671,
+      "away_elo_before": -0.004873289444339849,
+      "home_avg_goals_for_before": 0.408477159272314,
+      "home_avg_goals_against_before": 0.026462977328116272,
+      "away_avg_goals_for_before": -0.2827148674584402,
+      "away_avg_goals_against_before": 0.7559697151854817,
+      "is_knockout": -0.5138265501845234,
+      "home_is_host": 0.7751656265539084
+    }
+  },
+  "model_2_2": {
+    "evaluation": "chronological holdout using final 20% of unique target dates",
+    "n": 208,
+    "unique_matches": 104,
+    "predictor_count": 8,
+    "predictors": [
+      "is_home",
+      "is_knockout",
+      "team_days_rest",
+      "opponent_days_rest",
+      "team_recent_points_avg",
+      "opponent_recent_points_avg",
+      "team_recent_clean_sheet_rate",
+      "opponent_recent_clean_sheet_rate"
+    ],
+    "train_n": 192,
+    "test_n": 16,
+    "train_end_date": "2026-07-07",
+    "test_start_date": "2026-07-09",
+    "test_end_date": "2026-07-19",
+    "test_MAE": 1.0050148219846422,
+    "test_RMSE": 1.5171203728886946,
+    "test_R2": 0.0046900645042455835,
+    "baseline_MAE": 1.125,
+    "baseline_RMSE": 1.5484086813385038,
+    "baseline_R2": -0.03678678678678682,
+    "train_adjusted_R2_HC3_OLS": 0.16183097336816787,
+    "train_OLS_F_test_pvalue": 3.6400987805136724e-06,
+    "breusch_pagan_pvalue": 0.03470305966314592,
+    "durbin_watson": 1.989766623153246,
+    "max_VIF": 1.4573107747366987,
+    "vif": [
+      {
+        "feature": "is_home",
+        "VIF": 1.047182497451174
+      },
+      {
+        "feature": "is_knockout",
+        "VIF": 1.1589885739004022
+      },
+      {
+        "feature": "team_days_rest",
+        "VIF": 1.0438873367718293
+      },
+      {
+        "feature": "opponent_days_rest",
+        "VIF": 1.0438873367718293
+      },
+      {
+        "feature": "team_recent_points_avg",
+        "VIF": 1.4573107747366987
+      },
+      {
+        "feature": "opponent_recent_points_avg",
+        "VIF": 1.4573107747366982
+      },
+      {
+        "feature": "team_recent_clean_sheet_rate",
+        "VIF": 1.3840625345175894
+      },
+      {
+        "feature": "opponent_recent_clean_sheet_rate",
+        "VIF": 1.3840625345175894
+      }
+    ],
+    "coefficients": {
+      "intercept": 1.7257449312864857,
+      "is_home": 0.35105276216428577,
+      "is_knockout": -0.0905324911969349,
+      "team_days_rest": -0.005428559978278133,
+      "opponent_days_rest": -0.006880824170547241,
+      "team_recent_points_avg": 0.5531888799892597,
+      "opponent_recent_points_avg": -0.6558845767694231,
+      "team_recent_clean_sheet_rate": -0.5097491780425859,
+      "opponent_recent_clean_sheet_rate": 0.05351135451989112
+    }
+  }
+}
